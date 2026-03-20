@@ -93,7 +93,7 @@
 
                 if (!response.ok) throw new Error();
 
-                const data = await response.text();
+                const shortCode = await response.text();
                 const shortUrl = `${API_BASE}/api/url/${shortCode}`;
 
                 document.getElementById('shortUrl').href = shortUrl;
