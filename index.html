@@ -93,8 +93,8 @@
 
                 if (!response.ok) throw new Error();
 
-                const data = await response.json();
-                const shortUrl = `${API_BASE}/${data.shortCode}`;
+                const data = await response.text();
+                const shortUrl = `${API_BASE}/api/url/${shortCode}`;
 
                 document.getElementById('shortUrl').href = shortUrl;
                 document.getElementById('shortUrl').textContent = shortUrl;
