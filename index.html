@@ -86,7 +86,7 @@
             try {
                 const response = await fetch(`${API_BASE}/api/url/shorten`, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: { 'Content-Type': 'text/plain' },
                     // body: JSON.stringify({ url })
                     body: url
                 });
